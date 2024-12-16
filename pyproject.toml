@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "emg-data"
+version = "0.1.0"
+description = ""
+authors = ["Pinar <pnar.guenes@fau.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
