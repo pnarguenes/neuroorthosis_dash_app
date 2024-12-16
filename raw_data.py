@@ -20,7 +20,7 @@ def plot_raw_emg(emg_data, channel_index=0):
 
 if __name__ == "__main__":
     # File path to the .pkl file
-    file_path = "data/myocontrol_data_1.pkl"
+    file_path = 'data/myocontrol_data_1.pkl'
 
     # Load data
     data = load_data(file_path)

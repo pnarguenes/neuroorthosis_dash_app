@@ -26,5 +26,5 @@ def apply_butterworth_filter(emg_data, filter_type, cutoff, fs=1000):
 
 
 # Exportable function
-def process_with_butterworth(emg_data, fs, filter_type, cutoff):
+def process_with_butterworth(emg_data, fs, filter_type='bandpass', cutoff=(20, 450)):
     return apply_butterworth_filter(emg_data, filter_type, cutoff, fs)

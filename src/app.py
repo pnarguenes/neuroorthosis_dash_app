@@ -41,11 +41,11 @@ app.layout = html.Div(
                         dcc.Dropdown(
                             id='data-dropdown',
                             options=[
-                                {'label': 'Myocontrol Data 1', 'value': "data/myocontrol_data_1.pkl"},
-                                {'label': 'Myocontrol Data 2', 'value': "data/myocontrol_data_2.pkl"},
-                                {'label': 'Myocontrol Data 3', 'value': "data/myocontrol_data_3.pkl"}
+                                {'label': 'Myocontrol Data 1', 'value': 'data/myocontrol_data_1.pkl'},
+                                {'label': 'Myocontrol Data 2', 'value': 'data/myocontrol_data_2.pkl'},
+                                {'label': 'Myocontrol Data 3', 'value': 'data/myocontrol_data_3.pkl'}
                             ],
-                            value="data/myocontrol_data_1.pkl",
+                            value='data/myocontrol_data_1.pkl',
                             style={'margin-bottom': '10px'}
                         ),
                         html.Label("Select Channel:", style={'fontWeight': 'bold'}),
@@ -126,7 +126,6 @@ app.layout = html.Div(
 def update_channel_options(data_path):
     data = load_data(data_path)
     return [{'label': f'Channel {i + 1}', 'value': i} for i in range(data['emg'].shape[0])]
-
 
 @app.callback(
     [
