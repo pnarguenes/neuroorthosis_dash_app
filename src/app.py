@@ -5,12 +5,12 @@ import pickle
 import numpy as np
 
 # Import processing modules
-from butterworth_filter import process_with_butterworth
-from notch_filter import process_with_notch
-from rectification import process_with_rectification
-from smoothing import apply_smoothing
-from normalize import apply_normalization
-from feature_extraction import sliding_window_features
+from processing.butterworth_filter import process_with_butterworth
+from processing.notch_filter import process_with_notch
+from processing.rectification import process_with_rectification
+from processing.smoothing import apply_smoothing
+from processing.normalize import apply_normalization
+from processing.feature_extraction import sliding_window_features
 
 # Helper function
 def load_data(file_path):

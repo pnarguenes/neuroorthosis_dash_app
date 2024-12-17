@@ -1,0 +1,12 @@
+# Virtual environment
+venv/
+
+# Pycache files
+__pycache__/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Log files
+*.log
