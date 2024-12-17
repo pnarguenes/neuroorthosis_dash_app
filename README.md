@@ -1,4 +1,4 @@
-# EMG Data Analysis
+"# EMG Data Analysis
 
 This project provides a **Dash** interface for analyzing EMG data. The application supports filtering, normalization, and feature extraction of EMG signals.
 
@@ -14,18 +14,18 @@ This project provides a **Dash** interface for analyzing EMG data. The applicati
 
 ## Installation Steps
 
-Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd emg-data-analysis
+    Clone the repository:
+        ```bash
+        git clone <repository-url>
+        cd emg-data-analysis
 
    
-Install the dependencies:
-    pip install -r requirements.txt
+    Install the dependencies:
+        pip install -r requirements.txt
 
 
-Run the application:
-    python src/app.py
+    Run the application:
+        python src/app.py
 
 
 ---
