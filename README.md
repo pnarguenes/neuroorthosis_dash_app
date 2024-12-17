@@ -14,15 +14,15 @@ This project provides a **Dash** interface for analyzing EMG data. The applicati
 
 ## Installation Steps
 
-**1.** Clone the repository:
-   ```bash
-   git clone <repository-url>
+    **1.** Clone the repository:
+        ```bash
+        git clone <repository-url>
    
-**2.** Install the dependencies:
-    pip install -r requirements.txt
+    **2.** Install the dependencies:
+        pip install -r requirements.txt
 
-**3.** Run the application:
-    python src/app.py
+    **3.** Run the application:
+        python src/app.py
 
 
 ---
