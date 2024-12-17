@@ -1,4 +1,4 @@
-"# EMG Data Analysis
+### EMG Data Analysis
 
 This project provides a **Dash** interface for analyzing EMG data. The application supports filtering, normalization, and feature extraction of EMG signals.
 
