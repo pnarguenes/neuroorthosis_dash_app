@@ -29,23 +29,23 @@ This project provides a **Dash** interface for analyzing EMG (Electromyography) 
 
 ### **4. Usage**
 
-```markdown
-## Usage
-
 Once the application is running, use the Dash interface to:
 
-1. **Select Data**: Choose different EMG data files.
-2. **Select Channel**: Choose different channels
-2. **Apply Filters**: Use Butterworth and Notch filters to clean the signal.
-3. **Feature Extraction**: Extract features such as RMS, MAV, Zero Crossing, and more.
-4. **Visualize**: View raw signals, processed signals, and extracted features.
+1. **Select Data**: Choose different EMG data files.  
+2. **Select Channel**: Choose different channels.  
+3. **Apply Filters**: Use Butterworth and Notch filters to clean the signal.  
+4. **Feature Extraction**: Extract features such as RMS, MAV, Zero Crossing, and more.  
+5. **Visualize**: View raw signals, processed signals, and extracted features.  
 
-## Contact
+---
 
-If you have any questions or suggestions, feel free to contact:
+### **5. Contact**
 
-- **Name**: Pinar Gunes
-- **Email**: pnar.guenes@fau.de
+If you have any questions or suggestions, feel free to contact:  
+
+- **Name**: Pinar Gunes  
+- **Email**: pnar.guenes@fau.de  
+
 
 
 
