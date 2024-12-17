@@ -25,7 +25,6 @@ This project provides a **Dash** interface for analyzing EMG (Electromyography) 
     python src/app.py
 
 
----
 
 ### **4. Usage**
 
@@ -37,7 +36,6 @@ Once the application is running, use the Dash interface to:
 4. **Feature Extraction**: Extract features such as RMS, MAV, Zero Crossing, and more.  
 5. **Visualize**: View raw signals, processed signals, and extracted features.  
 
----
 
 ### **5. Contact**
 
