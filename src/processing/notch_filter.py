@@ -18,7 +18,7 @@ def notch_filter(signal, notch_freq, fs, quality_factor=30):
     return filtfilt(b, a, signal)
 
 
-def apply_notch_filter(emg_data, notch_freq=50, fs=1000):
+def apply_notch_filter(emg_data, notch_freq=50, fs=2000):
     """Apply notch filter to all EMG channels."""
     filtered_data = [notch_filter(channel, notch_freq, fs) for channel in emg_data]
     return np.array(filtered_data)

@@ -1,5 +1,6 @@
 import numpy as np
 from scipy.signal import savgol_filter
+from scipy.ndimage import gaussian_filter1d
 
 def smooth_with_sg(signal, window_length=101, polyorder=2):
     """
@@ -8,6 +9,10 @@ def smooth_with_sg(signal, window_length=101, polyorder=2):
     - polyorder: Order of the polynomial used in smoothing.
     """
     return savgol_filter(signal, window_length=window_length, polyorder=polyorder)
+
+def smooth_with_gaussian(signal, sigma=2):
+    """Smooth signal using Gaussian filter."""
+    return gaussian_filter1d(signal, sigma=sigma)
 
 def smooth_with_mav(signal, window_size=100):
     """Smooth signal using Mean Absolute Value (MAV) with a sliding window."""
@@ -32,5 +37,7 @@ def apply_smoothing(signal, method, **kwargs):
         return smooth_with_mav(signal, window_size=kwargs.get('window_size', 100))
     elif method == 'rms':
         return smooth_with_rms(signal, window_size=kwargs.get('window_size', 100))
+    elif method == 'gaussian':
+        return smooth_with_gaussian(signal, sigma=kwargs.get('sigma', 2))
     return signal  # Default: return original signal
 

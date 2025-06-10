@@ -12,3 +12,7 @@ __pycache__/
 *.log
 
 .idea/
+
+data/*
+!data/.gitkeep
+

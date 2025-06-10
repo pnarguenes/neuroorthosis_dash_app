@@ -19,7 +19,7 @@ def butter_filter(signal, filter_type, cutoff, fs, order=4):
     return filtfilt(b, a, signal)
 
 
-def apply_butterworth_filter(emg_data, filter_type, cutoff, fs=1000):
+def apply_butterworth_filter(emg_data, filter_type, cutoff, fs=2000):
     """Apply Butterworth filter to all EMG channels."""
     filtered_data = [butter_filter(channel, filter_type, cutoff, fs) for channel in emg_data]
     return np.array(filtered_data)
